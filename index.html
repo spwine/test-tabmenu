@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Profile</title>
+  </head>
+
+  <body>
+    <section class="section-profile">
+      <div class="profile-heading--container">
+        <p class="profile-head">Profile</p>
+
+        <h1 class="name">Samhee Yana</h1>
+        <span class="beans-remaining">
+          <strong> 45 Beans </strong>remaining
+        </span>
+      </div>
+    </section>
+    <section class="divider"></section>
+
+    <section class="section-menu-profile">
+      <div class="menu">
+        <ul class="menu-list">
+          <li>
+            <a href="#" class="menu-link">Account</a>
+            <ion-icon name="chevron-forward-outline" class="icon"></ion-icon>
+          </li>
+          <li>
+            <a href="subscription.html" class="menu-link">Subscription</a>
+            <ion-icon name="chevron-forward-outline" class="icon"></ion-icon>
+          </li>
+          <li>
+            <a href="#" class="menu-link">Saved places</a>
+            <ion-icon name="chevron-forward-outline" class="icon"></ion-icon>
+          </li>
+          <li>
+            <a href="#" class="menu-link">Friends</a>
+            <ion-icon name="chevron-forward-outline" class="icon"></ion-icon>
+          </li>
+          <li>
+            <a href="refer_friend.html" class="menu-link">Refer a friend</a>
+            <ion-icon name="chevron-forward-outline" class="icon"></ion-icon>
+          </li>
+          <li>
+            <a href="#" class="menu-link">Help center</a>
+            <ion-icon name="chevron-forward-outline" class="icon"></ion-icon>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="menu-tabbar-section">
+      <div class="menu-tabbar">
+        <div class="tab home">
+          <a href="#" class="tab-link">
+            <ion-icon name="home-outline" class="menu-icon"></ion-icon>
+            <p class="text-menu">Home</p>
+          </a>
+        </div>
+
+        <div id="container" class="qr-code-button">
+          <a id="btn-scan-qr">
+            <img
+              src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg"
+            />
+          </a>
+
+          <canvas hidden="" id="qr-canvas"></canvas>
+
+          <div id="qr-result" hidden="">
+            <b>Click link below to purchase: </b>
+            <a id="mylink" href="">Link</a>
+          </div>
+        </div>
+        <div class="tab profile">
+          <a href="profile.php" class="tab-link">
+            <ion-icon name="person-outline" class="menu-icon"></ion-icon>
+            <p class="text-menu">Profile</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+<?php
+$_SESSION['email'] = $email;
+?>

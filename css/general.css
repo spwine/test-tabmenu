@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.6rem;
+  font-style: normal;
+  color: #000000;
+}
+
+h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+p,
+input {
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-style: normal;
+  color: #000000;
+}
+
+input {
+  border: 1px solid #6c6a6a;
+  border-radius: 8px;
+  height: 4.8rem;
+  width: 32.7rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+
+  border-radius: 8px;
+  min-width: 32.7rem;
+  height: 48px;
+  color: #fff;
+  background-color: #000000;
+}
+
+/******** Tab menu *************/
+.menu-tabbar-section {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.menu-tabbar {
+  display: flex;
+  gap: 4rem;
+  position: relative;
+  justify-content: space-between;
+}
+
+.tab {
+  margin: 0 auto 4rem auto;
+  padding: 0px;
+}
+
+.tab-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu-icon {
+  font-size: 2.4rem;
+}
+
+.text-menu {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #808089;
+}
+
+.qr-code-button {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  min-width: 6.4rem;
+  height: 6.4rem;
+  background-color: red;
+  border-radius: 99px;
+}
+
+/* #container {
+  text-align: center;
+  margin: 0;
+} */
+
+#qr-canvas {
+  margin: auto;
+  width: calc(100% - 20px);
+  max-width: 400px;
+}
+
+#btn-scan-qr {
+  cursor: pointer;
+}
+
+#btn-scan-qr img {
+  height: 4rem;
+  width: 4rem;
+  margin: 1.2rem;
+}
+
+#qr-result {
+  font-size: 1.2em;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  background-color: white;
+}

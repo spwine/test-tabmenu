@@ -1,0 +1,7 @@
+.signform {
+  background-color: yellowgreen;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

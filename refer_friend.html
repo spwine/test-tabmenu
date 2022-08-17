@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Refer a friend</title>
+  </head>
+
+  <body>
+    <section class="refer-img-section"></section>
+    <section class="code-section">
+      <h1 class="code-heading">Get free 5 Beans!</h1>
+      <div class="code-input-container">
+        <input
+          type="text"
+          class="code-input"
+          value="aaaaaa000000"
+          id="myInput"
+        />
+        <button class="code-btn" onclick="myFunction()">Copy</button>
+      </div>
+      <p class="code-detail">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit
+        vulputate at et nibh ultricies quis libero urna. Amet, praesent vel
+        neque ullamcorper rhoncus elementum.
+      </p>
+    </section>
+
+    <section class="menu-tabbar-section">
+      <div class="menu-tabbar">
+        <div class="tab home">
+          <a href="#" class="tab-link">
+            <ion-icon name="home-outline" class="menu-icon"></ion-icon>
+            <p class="text-menu">Home</p>
+          </a>
+        </div>
+
+        <div id="container" class="qr-code-button">
+          <a id="btn-scan-qr">
+            <img
+              src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg"
+            />
+          </a>
+
+          <canvas hidden="" id="qr-canvas"></canvas>
+
+          <div id="qr-result" hidden="">
+            <b>Click link below to purchase: </b>
+            <a id="mylink" href="">Link</a>
+          </div>
+        </div>
+        <div class="tab profile">
+          <a href="profile.php" class="tab-link">
+            <ion-icon name="person-outline" class="menu-icon"></ion-icon>
+            <p class="text-menu">Profile</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function myFunction() {
+        /* Get the text field */
+        var copyText = document.getElementById("myInput");
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.value);
+
+        /* Alert the copied text */
+        alert("Copied the text: " + copyText.value);
+      }
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
