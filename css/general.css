@@ -107,35 +107,28 @@ input {
   transform: translate(-50%, 0);
   min-width: 6.4rem;
   height: 6.4rem;
-  background-color: red;
+  background-color: #000000;
   border-radius: 99px;
 }
 
-/* #container {
-  text-align: center;
-  margin: 0;
-} */
+.scan-icon {
+  margin: 9px 0 0 8px;
+}
 
+/******** Scan QR-Code *********/
+
+.qr-code {
+  position: absolute;
+  bottom: 30%;
+}
+
+.section-scan {
+  height: 100vh;
+}
 #qr-canvas {
+  /* position: absolute;
+  top: -500%;
+  left: -200%; */
   margin: auto;
-  width: calc(100% - 20px);
-  max-width: 400px;
-}
-
-#btn-scan-qr {
-  cursor: pointer;
-}
-
-#btn-scan-qr img {
-  height: 4rem;
-  width: 4rem;
-  margin: 1.2rem;
-}
-
-#qr-result {
-  font-size: 1.2em;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 700px;
-  background-color: white;
+  width: 100vw;
 }
