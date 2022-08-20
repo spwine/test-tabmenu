@@ -117,14 +117,17 @@ input {
 
 /******** Scan QR-Code *********/
 
+.section-scan {
+  height: 100vh;
+  position: relative;
+}
+
 .qr-code {
   position: absolute;
   bottom: 30%;
 }
 
-.section-scan {
-  height: 100vh;
-}
+
 #qr-canvas {
   /* position: absolute;
   top: -500%;
