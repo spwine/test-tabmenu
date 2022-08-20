@@ -63,46 +63,35 @@
       </div>
     </section>
 
-    <section class="menu-tabbar-section">
-      <div class="menu-tabbar">
-        <div class="tab home">
-          <a href="#" class="tab-link">
-            <ion-icon name="home-outline" class="menu-icon"></ion-icon>
-            <p class="text-menu">Home</p>
-          </a>
-        </div>
-
-        <div id="container" class="qr-code-button">
-          <a id="btn-scan-qr">
-            <img
-              src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg"
-            />
-          </a>
-
-          <canvas hidden="" id="qr-canvas"></canvas>
-
-          <div id="qr-result" hidden="">
-            <b>Click link below to purchase: </b>
-            <a id="mylink" href="">Link</a>
-          </div>
-        </div>
-        <div class="tab profile">
-          <a href="profile.php" class="tab-link">
-            <ion-icon name="person-outline" class="menu-icon"></ion-icon>
-            <p class="text-menu">Profile</p>
-          </a>
-        </div>
+   <section class="menu-tabbar-section">
+    <div class="menu-tabbar">
+      <div class="tab home">
+        <a href="#" class="tab-link">
+          <ion-icon name="home-outline" class="menu-icon"></ion-icon>
+          <p class="text-menu">Home</p>
+        </a>
       </div>
-    </section>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+      <div id="container" class="qr-code-button">
+
+        <a href="scan.html" id="btn-scan-qr">
+          <img class="scan-icon" src="src/img/ic_round-qr-code-scanner.svg" alt="qr-code-icon" />
+        </a>
+      </div>
+      <div class="tab profile">
+        <a href="profile.php" class="tab-link">
+          <ion-icon name="person-outline" class="menu-icon"></ion-icon>
+          <p class="text-menu">Profile</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="./src/qrCodeScanner.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   </body>
 </html>
 
